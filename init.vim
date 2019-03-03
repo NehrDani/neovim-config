@@ -21,6 +21,9 @@ Plug 'mxw/vim-jsx'
 " Linter & Formatter
 Plug 'w0rp/ale'
 
+" Fuzzy Search
+Plug 'junegunn/fzf.vim'
+
 " Statusline
 Plug 'itchyny/lightline.vim'
 
