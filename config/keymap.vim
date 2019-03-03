@@ -5,5 +5,7 @@ inoremap jk <esc>`^
 vnoremap jk <esc>`^
 
 " Remap <leader>
-let mapleader="\<space>"
-nnoremap <space> <nop>
+let mapleader=","
+
+" <Ctrl-l> redraws screen and removes any search highlighting
+nnoremap <silent> <C-l> :noh<CR><C-l>

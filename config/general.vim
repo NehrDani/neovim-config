@@ -27,15 +27,13 @@ set number
 set showcmd
 set cursorline
 set ruler
-set laststatus=2
-set noshowmode
+set laststatus=2 " Always show status
+set noshowmode " Disable mode because `lightline-plugin`
 set updatetime=200
 
 " Disable Swap And Backups:
 set nobackup
 set noswapfile
-
-" Disable Arrow Keys:
 
 " Disable Mouse:
 set mouse-=a

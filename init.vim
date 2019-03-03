@@ -18,14 +18,15 @@ Plug 'rakr/vim-one'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
+" Linter & Formatter
+Plug 'w0rp/ale'
+
 " Statusline
 Plug 'itchyny/lightline.vim'
-
-" Git
-Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
 
 source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/keymap.vim
+source $HOME/.config/nvim/config/plugins.vim
