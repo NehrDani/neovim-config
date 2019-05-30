@@ -1,16 +1,23 @@
-" Remapp Esc:
+" Remapp Esc
 inoremap <c-c> <esc>
 vnoremap <c-c> <esc>
 inoremap jk <esc>`^
 vnoremap jk <esc>`^
 
-" Remap <Leader>:
+" Remap <Leader>
 let mapleader=","
 
 " <Ctrl-l> redraws screen and removes any search highlighting
 nnoremap <silent> <C-l> :noh<CR><C-l>
 
-" FZF Keymaps:
+" Autoclose brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+" FZF Keymaps
 "
 " Find files
 nmap <Leader>f :GFiles<CR>

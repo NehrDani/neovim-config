@@ -6,12 +6,19 @@ filetype plugin indent on
 
 " Colors:
 set termguicolors
-colorscheme one
 set background=dark
-let g:one_allow_italics=1
+let g:nord_italic=1
+let g:nord_underline=1
+let g:nord_italic_comments=1
+let g:nord_cursor_line_number_background=1
+let g:nord_comment_brightness=15
+" Activate colorscheme
+colorscheme nord
+" Respect the terminal background color
+highlight Normal guibg=none guifg=none
 
 let g:lightline = {
-  \ 'colorscheme': 'one',
+  \ 'colorscheme': 'nord',
   \ }
 
 " Spaced And Tabs:

@@ -12,7 +12,7 @@ endif
 call plug#begin()
 
 " Themes
-Plug 'rakr/vim-one'
+Plug 'arcticicestudio/nord-vim'
 
 " Javascript & JSX
 Plug 'pangloss/vim-javascript'
@@ -26,6 +26,12 @@ Plug 'junegunn/fzf.vim'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
+
+" Comments (gc*)
+Plug 'tpope/vim-commentary'
+
+" Surroundings (ys/cs/ds)
+Plug 'tpope/vim-surround'
 
 " Initialize plugin system
 call plug#end()
