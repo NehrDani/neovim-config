@@ -1,8 +1,7 @@
 " Remapp Esc
 inoremap <c-c> <esc>
-vnoremap <c-c> <esc>
 inoremap jk <esc>`^
-vnoremap jk <esc>`^
+vnoremap <c-c> <esc>
 
 " Remap <Leader>
 let mapleader=","
