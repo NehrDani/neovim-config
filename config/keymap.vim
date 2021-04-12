@@ -16,6 +16,22 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
+" Coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gr <Plug>(coc-reference)
+nmap <leader>ac <Plug>(coc-codeaction)
+" Use <c-space> to trigger completion.
+if (has('nvim'))
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+" Use <CR> to auto-select the first completion item
+inoremap <silent<expr> <cr> pumvisible() ? coc#_select_confirm()
+  \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+
 " FZF Keymaps
 "
 " Find files

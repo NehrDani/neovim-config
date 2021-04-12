@@ -5,20 +5,21 @@ syntax enable
 filetype plugin indent on
 
 " Colors:
-set termguicolors
+if (has("termuicolors"))
+  set termguicolors
+endif
 set background=dark
+" Activate colorscheme
+" colorscheme night-owl
+colorscheme nord
 let g:nord_italic=1
 let g:nord_underline=1
 let g:nord_italic_comments=1
 let g:nord_cursor_line_number_background=1
-" Activate colorscheme
-colorscheme nord
+let g:lightline = { "colorscheme": "nord" }
 " Respect the terminal background color
 highlight Normal guibg=none guifg=none
 
-let g:lightline = {
-  \ 'colorscheme': 'nord',
-  \ }
 
 " Spaced And Tabs:
 set tabstop=2
@@ -36,6 +37,8 @@ set ruler
 set laststatus=2 " Always show status
 set noshowmode " Disable mode because `lightline-plugin`
 set updatetime=200
+set hidden
+set cmdheight=2
 
 " Disable Swap And Backups:
 set nobackup
