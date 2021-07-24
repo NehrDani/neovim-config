@@ -16,10 +16,9 @@ let g:nord_italic=1
 let g:nord_underline=1
 let g:nord_italic_comments=1
 let g:nord_cursor_line_number_background=1
-let g:lightline = { "colorscheme": "nord" }
+
 " Respect the terminal background color
 highlight Normal guibg=none guifg=none
-
 
 " Spaced And Tabs:
 set tabstop=2
@@ -39,10 +38,15 @@ set noshowmode " Disable mode because `lightline-plugin`
 set updatetime=200
 set hidden
 set cmdheight=2
+set signcolumn=number
 
 " Disable Swap And Backups:
 set nobackup
+set nowritebackup
 set noswapfile
+
+" Other Settings:
+set updatetime=300
 
 " Disable Mouse:
 set mouse-=a
@@ -66,3 +70,4 @@ set wildmenu
 set wildmode=list:longest,full
 " Ignore paths and files
 set wildignore+=**/node_modules/**
+

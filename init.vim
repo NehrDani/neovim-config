@@ -16,30 +16,23 @@ endif
 call plug#begin()
 
 " Themes
-" Plug 'haishanh/night-owl.vim'
 Plug 'arcticicestudio/nord-vim'
 
 " Javascript, Typescript & JSX
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'peitalin/vim-jsx-typescript'
 
 " Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-tsserver']
-if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-  let g:coc_global_extensions += ['coc-prettier']
-endif
-if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
-endif
 
 " Fuzzy Search
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do':{ -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 " Statusline
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 
 " Comments (gc*)
 Plug 'tpope/vim-commentary'
@@ -52,3 +45,4 @@ call plug#end()
 
 source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/keymap.vim
+source $HOME/.config/nvim/config/coc.vim

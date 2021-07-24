@@ -2,12 +2,13 @@
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "prettier.disableSuccessMessage": true,
-  "coc.preferences.formatOnSaveFileTypes": [
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnSaveFile": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
-  "tsserver.formatOnType": true,
-  "coc.preferences.formOnType": true
+  "coc.preferences.formatOnType": true,
+  "diagnostic.checkCurrentLine": true
 }
