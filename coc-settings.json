@@ -1,14 +1,20 @@
 {
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.packageManager": "yarn",
+  "eslint.quiet": true,
+  "suggest.noselect": false,
   "prettier.disableSuccessMessage": true,
-  "tsserver.formatOnType": true,
-  "coc.preferences.formatOnSaveFile": [
+  "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "typescript.tsx"
   ],
-  "coc.preferences.formatOnType": true,
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+  "snippets.ultisnips.usePythonx": false,
+  "snippets.ultisnips.enable": false,
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false
 }
